@@ -7,3 +7,20 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+
+@media screen and (min-width: 1024px){
+
+    /**/
+    .author {
+        display: flex;
+        flex-direction: column;
+        gap: 40;
+        padding: 32px 40px;
+        width: 100%; 
+    }
+
+    
+
+}
