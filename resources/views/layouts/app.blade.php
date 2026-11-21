@@ -42,12 +42,12 @@
 <body class="page min-h-screen flex flex-col">
     <!-- Navigation -->
     <header class="header border-b border-[#353731] h-[96px] flex items-center justify-between px-6 lg:px-[64px] w-full shrink-0">
-        <div class="logo__wrap serif text-[28px] leading-none">
+        <div class="logo__wrap serif text-[20px] lg:text-[28px] leading-none">
             <a href="/" class="logo__link hover:opacity-80 transition-opacity">полотно.</a>
         </div>
-        <nav class="flex gap-[36px] items-center">
-            <a href="/gallery" class="{{ Request::is('gallery*') ? 'text-[#f2f0ea]' : 'text-[#adada5]' }} text-[13px] hover:text-[#f2f0ea] transition-colors">Галерея</a>
+        <nav class="flex gap-[20px] lg:gap-[36px] items-center">
             <a href="/authors" class="{{ Request::is('authors*') ? 'text-[#f2f0ea]' : 'text-[#adada5]' }} text-[13px] hover:text-[#f2f0ea] transition-colors">Авторы</a>
+            <a href="/gallery" class="{{ Request::is('gallery*') ? 'text-[#f2f0ea]' : 'text-[#adada5]' }} text-[13px] hover:text-[#f2f0ea] transition-colors">Войти</a>
             <form class="text-[#f2f0ea] text-[13px] hover:color-[#f2f0ea] transition-colors" style="width: 24px; height:24px">
                 <input type="submit" style="display: none"/>
                 <button class="text-[#f2f0ea] text-[13px] hover:color-[#f2f0ea] transition-colors" style="width: 24px; height:24px" disabled>
@@ -65,7 +65,7 @@
                 </button>
             </form>
             <div class="w-px h-[16px] bg-[#353731]"></div>
-            <span class="text-[12px] text-[#75786f]">Независимая онлайн-галерея</span>
+            <span class="hidden lg:block text-[12px] text-[#75786f]">Независимая онлайн-галерея</span>
         </nav>
     </header>
 
